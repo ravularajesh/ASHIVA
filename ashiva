@@ -2,11 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+       stage('Hello') {
             steps {
                 echo 'Hello, World!'
             }
         }
+        stage('Git') {
+            steps {
+                echo 'we need to push code into git'
+            }
+        }
+
     }
 }
 
