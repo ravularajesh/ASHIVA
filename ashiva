@@ -9,13 +9,10 @@ pipeline {
         }
         stage('Git') {
             steps {
-                echo 'we need to push code into git'
+                echo 'push the code to git'
             }
         }
-        stage('doc') {
-            steps {
-                echo 'docker will create docker images'
-            }
+       
         }
     }
 }
